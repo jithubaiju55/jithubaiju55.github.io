@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Boxicons CDN -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.15.1/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/zoro.gif" alt="logo" id="navbar-logo" />
+        <h1>Jithu Baiju</h1>
+      </div>
+      <nav>
+        <a href="#about">ABOUT</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#projects">PROJECT</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-info autoblur">
+        <div class="hero-info-title">
+          <div class="title-content">
+            &wedbar; TURNING IDEAS INTO CODE &wedbar;
+          </div>
+        </div>
+        <h1>CODE. CREATE. INNOVATE. WELCOME TO MY WORLD!</h1>
+        <p>
+          I'm Jithu Baiju, a passionate Web Developer and Data Science
+          enthusiast. I specialize in creating dynamic and responsive web
+          applications using technologies like HTML, CSS, JavaScript. I also
+          have a growing interest and experience in Data Science, working with
+          data analysis, Python, and machine learning to derive meaningful
+          insights.
+        </p>
+        <div class="buttons">
+          <a href="#contact" class="contact-me">CONTACT ME &gt;</a>
+          <a
+            href="resume/Jithu_Baiju_Resume.pdf"
+            class="download-cv"
+            download="Jithu_Baiju_Resume.pdf"
+            >DOWNLOAD RESUME &darr;
+          </a>
+        </div>
+      </div>
+      <div class="hero-vid">
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          src="videos/hero-video.mp4"
+          type="video/mp4"
+          class="autoblur"
+        ></video>
+      </div>
+      <div class="scroll-down"></div>
+    </section>
+
+    <section class="info-section" id="about">
+      <h1 class="section-title autodisplay">About Me</h1>
+      <div class="bento-grid">
+        <div class="card intro">
+          <h2 class="card-title">HI THERE, I'M JITHU BAIJU</h2>
+          <p class="card-text">
+            Passionate about crafting clean websites and uncovering stories
+            hidden in data. I build with HTML, CSS, JavaScript, and explore data
+            using Python and machine learning.
+          </p>
+          <img
+            src="images/gradient 1.png"
+            alt="background"
+            class="background-img"
+          />
+          <div class="lottie-container" id="lottie-animation"></div>
+        </div>
+        <div class="card tech">
+          <h2 class="card-title">TECH STACK</h2>
+          <p class="card-text">
+            I work with a range of technologies in web development and data
+            science. My main tech stack includes HTML, CSS, JavaScript, Node.js,
+            and MongoDB for building full-stack web applications. I also use
+            Python for data analysis and machine learning. I'm always exploring
+            new tools to stay updated and improve my workflow.
+          </p>
+          <img
+            src="images/gradient 2.png"
+            alt="background"
+            class="background-img"
+          />
+          <img
+            src="images/skills group.png"
+            alt="skill-group"
+            class="skills-group"
+          />
+        </div>
+        <div class="card time">
+          <h2 class="card-title">
+            VERY FLEXIBLE WITH TIME ZONE, COMMUNICATION & LOCATION
+          </h2>
+          <p class="card-text">
+            I'm open to remote work and comfortable working across different
+            time zones. I value clear communication and can easily adapt to your
+            preferred tools and schedules.
+          </p>
+          <img
+            src="images/gradient3&4.png"
+            alt="background"
+            class="background-img"
+          />
+        </div>
+        <div class="card passion">
+          <h2 class="card-title">PASSION FOR CODING</h2>
+          <p class="card-text">
+            I love solving problems and bringing ideas to life through code.
+            Whether it's building websites, analyzing data, or learning new
+            technologies, coding is something I genuinely enjoy and constantly
+            strive to get better at.
+          </p>
+          <img
+            src="images/gradient3&4.png"
+            alt="background"
+            class="background-img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="my-projects" id="projects">
+      <h1 class="section-title autodisplay">MY PROJECTS 👨‍💻</h1>
+      <!-- <div class="project-card">
+        <div class="project-vidbox autoblur">
+          <video id="projectvideo1" src="videos/project-3.mp4"></video>
+          <div class="hover-sign"></div>
+        </div>
+        <div class="project-info fadeinright">
+          <h1>Animated <span class="gradient">Gaming</span> Website</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+            deleniti tenetur at voluptas aperiam. Excepturi, necessitatibus
+            porro adipisci, libero odio dolorum ipsam doloremque, ab explicabo
+            perspiciatis obcaecati illo voluptatum quos?
+          </p>
+          <div class="project-buttons">
+            <a
+              href="YOUR_GITHUB_REPO_LINK"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github"></i> Source Code
+            </a>
+          </div>
+        </div>
+      </div> -->
+      <div class="project-card">
+        <div class="project-vidbox autoblur">
+          <img src="images/nova.png" alt="Project Name" class="project-image" />
+        </div>
+        <div class="project-info fadeinright">
+          <h1><span class="gradient">N.O.V.A</span></h1>
+          <p>
+            N.O.V.A. is your personal AI assistant project inspired by JARVIS,
+            designed to behave more dynamically than a simple command-based bot.
+            It’s meant to interact intelligently, understand natural language,
+            and perform tasks rather than just answer questions.
+          </p>
+          <div class="project-buttons">
+            <a
+              href="https://github.com/jithubaiju55/N.O.V.A"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github"></i> Source Code
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-vidbox autoblur">
+          <div class="project-placeholder"><i class="bx bx-code-alt"></i></div>
+        </div>
+        <div class="project-info fadeinright">
+          <h1><span class="gradient">AI-DEBUG</span></h1>
+          <p>
+            ai-dbug is a smart Python package that automatically catches errors
+            in your code and explains them in plain English, along with
+            practical fixes. Instead of getting cryptic error messages, you get
+            human-friendly explanations that help you understand what went wrong
+            and how to fix it.
+          </p>
+          <div class="project-buttons">
+            <a
+              href="https://github.com/jithubaiju55/ai-dbug"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github"></i> Source Code
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="project-card">
+        <div class="project-vidbox autoblur">
+          <video id="projectvideo3" src="videos/project-3.mp4"></video>
+        </div>
+        <div class="project-info fadeinright">
+          <h1>Animated <span class="gradient">Gaming</span> Website</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+            deleniti tenetur at voluptas aperiam. Excepturi, necessitatibus
+            porro adipisci, libero odio dolorum ipsam doloremque, ab explicabo
+            perspiciatis obcaecati illo voluptatum quos?
+          </p>
+          <div class="project-buttons">
+            <a
+              href="YOUR_GITHUB_REPO_LINK"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-github"></i> Source Code
+            </a>
+          </div>
+        </div>
+      </div> -->
+    </section>
+
+    <section class="skill-section" id="skills">
+      <h1 class="section-title autodisplay">My Skills</h1>
+      <div class="skill-box">
+        <img class="skill-img" src="images/brain.png" alt="brain" />
+
+        <div class="designer">
+          <h1 class="gradient">Designer <i class="bx bx-laptop"></i></h1>
+          <p>
+            I enjoy creating clean and user-friendly web interfaces with a focus
+            on simplicity and usability. I pay attention to layout, color, and
+            responsiveness to ensure a smooth user experience across all
+            devices.
+          </p>
+        </div>
+        <div class="coder">
+          <h1 class="gradient">Coder <i class="bx bx-code-block"></i></h1>
+          <p>
+            I love turning ideas into reality through code. From building
+            responsive websites to exploring data with Python, I enjoy solving
+            real-world problems using clean and efficient code.
+          </p>
+        </div>
+        <div
+          class="slider"
+          reverse="true"
+          style="--width: 100px; --height: 100px; --quantity: 10"
+        >
+          <div class="list">
+            <div class="item">
+              <i class="devicon devicon-javascript-plain colored"></i>
+            </div>
+            <div class="item">
+              <i class="devicon devicon-python-plain colored"></i>
+            </div>
+            <div class="item">
+              <i class="devicon devicon-nodejs-plain colored"></i>
+            </div>
+            <div class="item">
+              <i class="devicon devicon-html5-plain colored"></i>
+            </div>
+            <div class="item">
+              <i class="devicon devicon-css3-plain colored"></i>
+            </div>
+            <div class="item">
+              <i class="devicon devicon-c-plain colored"></i>
+            </div>
+            <div class="item">
+              <i class="devicon devicon-java-plain colored"></i>
+            </div>
+            <div class="item">
+              <i class="devicon devicon-pandas-original colored"></i>
+            </div>
+            <div class="item">
+              <i class="devicon devicon-matplotlib-plain colored"></i>
+            </div>
+            <div class="item">
+              <i class="devicon devicon-numpy-original colored"></i>
+            </div>
+            <div class="item">
+              <i class="devicon devicon-scikit-learn-plain colored"></i>
+            </div>
+            <div class="item">
+              <i class="devicon devicon-git-plain colored"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <h1 class="section-title autodisplay">Get in Touch — Let's Connect</h1>
+
+      <div class="contact-container">
+        <div class="contact-box autoblur">
+          <p>
+            Interested in working together or have any questions? Feel free to
+            reach out — I'm always open to new opportunities and collaborations.
+          </p>
+          <form id="contactForm">
+            <p>Your Name</p>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="What's your good name?"
+              required
+            />
+
+            <p>Email Address</p>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="What's your email address?"
+              required
+            />
+
+            <p>Your Message</p>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="How can I help you?"
+              rows="5"
+              required
+            ></textarea>
+
+            <button type="submit" id="submitBtn">
+              <i class="bx bx-send"></i>
+              <span id="btnText">Send Message</span>
+            </button>
+          </form>
+          <div id="formMessage" class="form-message"></div>
+        </div>
+
+        <div class="contact-3d-box autoblur">
+          <canvas id="contactCanvas"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Left Section - Terms -->
+        <div class="footer-section footer-left">
+          <p>Terms & Conditions</p>
+        </div>
+
+        <!-- Center Section - Social Icons -->
+        <div class="socials">
+          <a
+            href="https://github.com/jithubaiju55"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-icon github"
+          >
+            <i class="bx bxl-github"></i>
+          </a>
+          <a
+            href="https://linkedin.com/in/jithu-baiju"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-icon linkedin"
+          >
+            <i class="bx bxl-linkedin"></i>
+          </a>
+
+          <a
+            href="https://instagram.com/jithu_2440"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social-icon instagram"
+          >
+            <i class="bx bxl-instagram"></i>
+          </a>
+        </div>
+
+        <!-- Right Section - Copyright -->
+        <div class="footer-section footer-right">
+          <p>
+            © <span id="currentYear"></span> Jithu Baiju. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
+    <!-- Lottie Animation -->
+    <script>
+      const animation = lottie.loadAnimation({
+        container: document.getElementById("lottie-animation"),
+        renderer: "svg",
+        loop: true,
+        autoplay: true,
+        path: "images/profile.json",
+      });
+    </script>
+
+    <!-- Main Script -->
+    <script src="script.js"></script>
+
+    <!-- Hover Sound Effect -->
+    <audio id="hoverSound" preload="auto">
+      <source src="sounds/pop.wav" type="audio/wav" />
+    </audio>
+  </body>
+</html>
