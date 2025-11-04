@@ -31,14 +31,42 @@ document.addEventListener("DOMContentLoaded", function () {
   let audioEnabled = false;
   let hoverSound = null;
 
-  // Preload the audio
-  try {
-    hoverSound = new Audio("sounds/pop.wav");
-    hoverSound.volume = 0.5;
-    hoverSound.load();
-  } catch (error) {
-    console.log("Audio loading error:", error);
+  // Preload the audio with correct relative path
+  function loadAudio() {
+    const audioPath = "sounds/pop.wav"; // Remove the leading dot-slash
+    try {
+      hoverSound = new Audio(audioPath);
+      hoverSound.volume = 0.5;
+      hoverSound.preload = "auto";
+
+      // Test if audio can load
+      hoverSound.addEventListener(
+        "canplaythrough",
+        () => {
+          console.log("Audio loaded successfully");
+        },
+        { once: true }
+      );
+
+      hoverSound.addEventListener(
+        "error",
+        (e) => {
+          console.error(
+            "Audio loading failed - check if sounds/pop.wav exists in your repo"
+          );
+          hoverSound = null;
+        },
+        { once: true }
+      );
+
+      hoverSound.load();
+    } catch (error) {
+      console.log("Audio loading error:", error);
+      hoverSound = null;
+    }
   }
+
+  loadAudio();
 
   // Enable audio on first user interaction
   function enableAudio() {
@@ -49,13 +77,17 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(() => {
           hoverSound.pause();
           hoverSound.currentTime = 0;
+          console.log("Audio enabled and ready");
         })
-        .catch(() => {});
+        .catch((err) => {
+          console.log("Audio enable error:", err);
+        });
     }
   }
 
   document.addEventListener("click", enableAudio, { once: true });
   document.addEventListener("touchstart", enableAudio, { once: true });
+  document.addEventListener("keydown", enableAudio, { once: true });
 
   navLinks.forEach((link) => {
     link.addEventListener("mouseenter", function () {
